@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spend-wisely</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Nunito', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800">
+
+  <div class="max-w-lg mx-auto px-4 py-10">
+
+    
+    <div class="mb-8">
+      <h1 class="text-3xl font-extrabold text-slate-800"> Spend-wisely</h1>
+      <p class="text-slate-400 text-sm mt-1">Track your money with spend wisely</p>
+    </div>
+
+    
+    <div class="bg-slate-800 text-white rounded-2xl p-6 mb-6 ">
+      <p class="text-slate-400 text-xs font-semibold uppercase mb-1">Total Balance</p>
+      <p class="text-4xl font-extrabold mb-5">300,000</p>
+      <div class="flex gap-4">
+        <div class="flex-1 bg-slate-700 rounded-xl p-3">
+          <p class="text-slate-400 text-xs mb-1">Income</p>
+          <p class="text-emerald-400 font-bold text-lg">15,00000</p>
+        </div>
+        <div class="flex-1 bg-slate-700 rounded-xl p-3">
+          <p class="text-slate-400 text-xs mb-1">Expenses</p>
+          <p class="text-rose-400 font-bold text-lg">1200000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 mb-6 shadow-sm border border-slate-100">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Add Transaction</h2>
+
+      
+      <div class="flex gap-2 mb-4">
+        <button class="flex-1 py-2 rounded-xl text-sm font-bold border-2 border-rose-400 bg-rose-400 text-white">
+           Expense
+        </button>
+        <button class="flex-1 py-2 rounded-xl text-sm font-bold border-2 border-slate-200 text-slate-400">
+          + Income
+        </button>
+      </div>
+
+      
+      <input
+        type="text"
+        placeholder="Description"
+        class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm mb-3 focus:border-slate-400"
+      />
+
+     
+      <div class="flex gap-3 mb-4">
+        <input
+          type="number"
+          placeholder="Amount"
+          class="flex-1 border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-slate-400"
+        />
+        <select class="flex-1 border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none bg-white text-slate-600">
+          <option> Food</option>
+          <option> Transport</option>
+          <option> Entertainment</option>
+          <option> Shopping</option>
+          <option> Education</option>
+          <option> Health</option>
+          <option> Salary</option>
+          <option> Gift</option>
+          <option> Other</option>
+        </select>
+      </div>
+
+      <button class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-sm">
+        Add Transaction
+      </button>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-400">History</h2>
+        <button class="text-xs text-slate-400 hover:text-rose-500 font-semibold">Clear All</button>
+      </div>
+
+    
+      <div class="flex items-center justify-between py-3 border-b border-slate-100">
+        <div class="flex items-center gap-3">
+         
+          <div>
+            <p class="text-sm font-semibold text-slate-700">Burger King</p>
+            <p class="text-xs text-slate-400">Food · 18 Mar</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-sm text-rose-500">250.00</span>
+          <button class="text-slate-300 hover:text-rose-400 text-lg leading-none">×</button>
+        </div>
+      </div>
+
+     
+      <div class="flex items-center justify-between py-3 border-b border-slate-100">
+        <div class="flex items-center gap-3">
+          
+          <div>
+            <p class="text-sm font-semibold text-slate-700">Salary</p>
+            <p class="text-xs text-slate-400">Salary · 17 Mar</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-sm text-emerald-500">+₹5,00000</span>
+          <button class="text-slate-300 hover:text-rose-400 text-lg leading-none">×</button>
+        </div>
+      </div>
+
+    
+      <div class="flex items-center justify-between py-3 border-b border-slate-100">
+  <div class="flex items-center gap-3">
+    <div>
+      <p class="text-sm font-semibold text-slate-700">Metro Card Recharge</p>
+      <p class="text-xs text-slate-400">Transport · 16 Mar</p>
+    </div>
+  </div>
+  <div class="flex items-center gap-3">
+    <span class="font-bold text-sm text-rose-500">−₹500.00</span>
+    <button class="text-slate-300 hover:text-rose-400 text-lg leading-none">×</button>
+  </div>
+</div>
+
+
+
+      <div class="flex items-center justify-between py-3 border-b border-slate-100">
+        <div class="flex items-center gap-3">
+         
+          <div>
+            <p class="text-sm font-semibold text-slate-700">Programming Book</p>
+            <p class="text-xs text-slate-400">Education · 15 Mar</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-sm text-rose-500">−₹650.00</span>
+          <button class="text-slate-300 hover:text-rose-400 text-lg leading-none">×</button>
+        </div>
+      </div>
+
+  
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+         
+          <div>
+            <p class="text-sm font-semibold text-slate-700">Netflix Subscription</p>
+            <p class="text-xs text-slate-400">Entertainment · 14 Mar</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-sm text-rose-500">−₹400.00</span>
+          <button class="text-slate-300 hover:text-rose-400 text-lg leading-none">×</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
